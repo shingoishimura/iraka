@@ -1,0 +1,1108 @@
+@charset "UTF-8";
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {margin: 0;padding: 0;}
+
+.container img {
+	max-width: 100%;
+	margin: auto;
+}
+
+body{
+	width: 100%;
+	margin:auto;
+	padding:0;
+	background:url("data:image/svg+xml;charset=utf-8,%3csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='50' height='30' viewBox='0 0 140 80' preserveAspectRatio='none'%3e%3cg opacity='.27'%3e%3cpath fill='%23808080' opacity='.45' d='M4 1h42l21 36zM3 3l63 36h-42zM1 4l21 36-21 36zM3 77l21-36h42zM46 79h-42l63-36zM69 44v41h-24zM95 85h-24v-41zM73 43l63 36h-42zM74 41h42l21 36zM118 40l21-36v72zM137 3l-21 36h-42zM94 1h42l-63 36zM71 36v-41h24zM45-5h24v41zM-70-40v160h280v-160z'/%3e%3c/g%3e%3c/svg%3e");
+	color:#000;
+	line-height: 150%;
+	font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3",Meiryo,"メイリオ",sans-serif;
+}
+
+.logo{
+	width: 160px;
+	margin:auto;
+	padding: 20px 0 10px 0;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.logo-text {
+	text-align: center;
+	font-size: 14px;
+}
+
+nav{
+	text-align: center;
+	margin: 24px 0 24px 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	width: 19%;
+	min-width: 90px;
+	line-height: 120%;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #333;
+}
+
+nav ul li.current a{
+	text-decoration:none;
+	color: #F33135;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	color:#b62e55;
+}
+
+.nav-eg {
+	font-size: 11px;
+}
+
+body>footer>small{
+	font-size:10px;
+	line-height:1;
+	font-family:Arial,sans-serif;
+}
+
+
+.footer-top{
+	width: 100%;
+    padding: 10px 0 100px 0;
+    background-color: #000;
+    color: #888;
+    margin-top: 64px;
+    height: 100px;
+}
+	
+
+.logo-footer_area{
+	text-align:center;
+	width: 25%;
+	float:  left;
+	height: 100%;
+}
+
+/* .logo-footer_area_logo{ 
+	width: 50%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+} */
+
+.footer_adress{
+	width:  55%;
+	float:  left;
+	height: 100%;
+	text-align: center;
+}
+
+.footer_sns{
+	width:  20%;
+	float:  left;
+	height: 100%;
+}
+
+.footer_sns img{
+	width: 80%;
+	border-radius: 50px;
+}
+
+.footer_under{
+width:100%;
+padding:0 0 70px 0;
+text-align:center;
+margin: auto;
+}
+
+body>article{
+	width:100%;
+	min-height:600px;
+	margin:0 auto;
+	padding:0 20px;
+}
+
+.bunner{
+	text-align: center;
+	margin: auto;
+	padding: 30px 0 0 0;
+}
+
+.center {
+	text-align: center;
+}
+
+/* index */
+
+.index_area h2{
+	font-size: 20px;
+}
+
+.key {
+	width: 100%;
+	margin: auto;
+}
+
+.key img {
+	width: 100%;
+}
+
+.key-text {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 40px;
+	font-family:;
+}
+
+.what_is {
+	margin-top: 35px;
+	border-bottom: 1px solid gray;
+}
+
+.text {
+	margin-top: 15px;
+
+}
+
+
+.stage-top h2{
+ margin-top: 30px;
+ border-bottom: 1px solid gray;
+}
+
+.stage-top_area{
+	width:100%;
+	margin: 30px 0 0 0;
+}
+
+
+.stage-right_area{
+	background-color: powderblue;
+	width: 50%;
+	float: right;
+	padding: 50px 0;
+	height: auto;
+
+
+}
+.stage-right_area_text{
+	display:block;
+	width:70%;
+}
+
+.stage-right_area h3{
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.press{
+	width: 500px;
+	display:  inline-block;
+}
+
+.press-top_area{
+	width:100%;
+	/* margin: 30px 0 0 0; */
+}
+
+
+.press-left_area{
+	width:  50%;
+	padding: 30px 0;
+	height: 425px;
+	float: left;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	
+	
+}
+
+.press-left_area_sp{
+	width:  100%;
+	padding: 30px 0;
+	height: 425px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	
+}
+
+.press-left_area img{
+	
+		
+}
+
+.press-right_area{
+	/* background-color: powderblue; */
+	width: 50%;
+	float: right;
+	padding: 50px 0;
+	height: 425px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+
+}
+
+.press-right_area_text{
+	display:inline-block;
+	width:70%;
+	margin: 10px auto;
+}
+
+.press-right_area_sp{
+	/* background-color: powderblue; */
+	width: 100%;
+	padding: 50px 0;
+	height: 425px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	
+
+}
+
+
+
+.press-right_area_text_sp{
+	display:inline-block;
+	width:80%;
+}
+
+.twitter{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+
+}
+
+
+.video{
+	width: 100%;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+
+.stage-info-image {
+	height: 250px;
+	padding: 24px;
+	display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.stageinfo_area{
+	float: left;
+	margin: 16px 0 30px 0;
+}
+
+.stageinfo_area img{
+	width: 50%;
+	padding: 2px;
+ 	margin-bottom: 10px;
+	border: 1px solid #c7c7c7;
+}
+
+.stageinfo_area{
+	text-align: center;
+}
+
+.stageinfo_area{
+margin-bottom: 20px;
+ border-top: 1px solid gray;
+ width: 100%;
+}
+
+.stageinfo_area p{
+	font-size: 14px;
+}
+
+.stageinfo_left{
+	float: left;
+	width: 33%;
+	border-right: 1px solid gray;
+ 	margin: 24px 0 15px 0;
+}
+
+.border-none {
+	border: none;
+}
+
+.stageinfo_center{
+	width: 33%;
+	border-right: 1px solid gray;
+}
+
+.stageinfo_right{
+	width: 33%;
+}
+
+.stage-top a:link{
+	color:#000;
+	text-decoration:none;
+}
+.stage-top a:visited{
+	color:#000;
+	text-decoration:none;
+}
+.stage-top a:hover{
+	color:#b62e55;
+	text-decoration:none;
+}
+.stage-top a:active{
+	color:#000;
+	text-decoration:none;
+}
+
+.stage-top a:hover img{
+	filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+/*.index_atelier {
+	background-color: black;
+	color: #fff;
+	font-size: 20px;
+	padding: 16px 0 16px 0;
+	text-align: center;
+	width: 50%;
+	background-color: black;
+	border-radius: 50px;
+	margin: auto;
+	text-align: center;
+	margin-top: 16px;
+	margin-bottom: 16px;
+
+
+.index_atelier a:link{
+	color:#fff;
+	text-decoration:none;
+}
+.index_atelier a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+.index_atelier a:hover{
+	color:#b62e55;
+	text-decoration:none;
+}
+.index_atelier a:active{
+	color:#000;
+	text-decoration:none;
+}*/
+
+.sonota{
+ margin-top: 10px;
+ text-align: center;
+}
+
+.sonota-text{
+
+}
+.toppage-member{
+	width: 100px;
+	height: 100px;
+}
+
+.pic-member a:hover img{
+	filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  /*画像を70%の不透明度に
+  もし50%にしたいときは
+  上から50、0.5、0.5にします*/
+}
+
+.member{
+	border-bottom: 1px solid gray;
+}
+
+.pic-member{
+	width: 100%;
+	height: 100%;
+	
+}
+.member-list {
+	display: flex;
+	text-align: center;
+  justify-content: space-around;
+	margin: 60px 0;
+	list-style: none;
+}
+
+.pic-member img {
+	width: 500px;
+	height: 325px;
+	
+}
+
+.member-name {
+  font-size: 16px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.member-info {
+	margin-top: 20px;
+}
+
+.stage-history{
+	margin-top: 80px;
+}
+
+
+/*.pic-member img{
+	width: 100%;
+	height: 400px;
+	margin: 10px;
+}*/
+
+.toppage-member h2{
+	border-bottom: 1px solid gray;
+}
+
+/* about */
+
+.about_key img{
+	width: 100%
+}
+
+.about_bunshou{
+ margin: 30px 0 30px 0;
+}
+
+.about_bunshou h2{
+ border-bottom: 1px solid gray;
+ font-size: 20px;
+}
+.atelier_pic_area{
+	width:100%;
+}
+
+.about_pic9{
+	background-color:	#f7f7f7;
+	padding:30px 0;
+}
+
+.about-img{
+	padding-bottom: 10px;
+}
+
+.about-img figcaption{
+	text-align: right;
+	font-size: 12px;
+}
+
+.atelier_map{
+	width:  50%;
+	float:  left;
+	padding: 0;
+	display: inline-block;
+	border:solid 1px #ccc;
+	padding:1px;
+}
+
+.atelier_map img {
+	width: 100%;
+	margin: auto;
+}
+
+.atelier_pic{
+	width:  50%;
+	float: left;
+	margin: auto;
+	text-align:center;
+}
+
+.atelier_pic_area p{
+	font-size: 12px;
+	text-align: center;
+}
+
+.cb{
+  /* floatを解除 */
+  clear: both;
+}
+
+.oh {
+	overflow: hidden;
+}
+
+.abot_info_area{
+	width:100%;
+	height: 300px;
+}
+
+.about {
+	overflow: hidden;
+}
+
+.about_atelier{
+	 margin: 60px 0 60px 0;
+}
+
+.about_atelier h2{
+	border-bottom: 1px solid gray;
+  font-size: 20px;
+}
+
+.about_address{
+	font-size: 22px;
+}
+
+.aboutkey-text {
+	text-align: right;
+	font-size: 12px;
+}
+
+.about-img {
+	float: left;
+	margin: 0 16px;
+}
+
+.about_workshop {
+	padding: 50px 0;
+}
+
+.about_workshop h2{
+ border-bottom: 1px solid gray;
+ font-size: 20px;
+}
+
+.about_workshop ul {
+	margin: 0;
+	padding: 0;
+}
+
+.about_workshop ul li {
+	list-style: none;
+	min-width: 90px;
+	line-height: 120%;
+}
+
+.about_workshop  ul li a{
+	text-decoration: none;
+	color: #333;
+}
+
+.about_workshop_kategorie{
+	background-color: #e3e3e3;;
+	width: 30%;
+	color: #393939;
+}
+
+.about_workshop_kategorie h3{
+	font-size: 18px;
+  padding: 6px;
+}
+
+.ws_pic{
+	width:  35%;
+	float:  left;
+	height: 260px;
+	padding: 0;
+}
+
+.ws_pic-text{
+	font-size: 12px;
+}
+
+.tel-number{
+	background-color:  #ccc;
+	width:  65%;
+	float:  left;
+	margin: auto;
+	text-align:center;
+	padding: 15px 0;
+	border-radius:10px;
+}
+
+/* stage */
+
+.stage-page{
+	padding-top: 20px;
+	border-top: 1px solid gray;
+}
+
+#side_bar{
+}
+
+#side_bar  h2{
+	margin:0 0 15px 0;
+	padding:0;
+	font-size:14px;
+	line-height:1em;
+	background-color: #000000;
+	color:#ffffff;
+	text-align: center;
+}
+
+#side_bar  ul{
+	margin:0;
+	font-size:12px;
+	line-height:1em;
+}
+
+#side_bar  li{
+	margin:0 0 10px 0;
+	list-style: none;
+	border-bottom:1px solid #b1b1b1;
+}
+
+#side_bar a:link{
+	color:#000;
+	text-decoration:none;
+}
+#side_bar a:visited{
+	color:#000;
+	text-decoration:none;
+}
+#side_bar a:hover{
+	color:#b62e55;
+	text-decoration:none;
+}
+#side_bar a:active{
+	color:#000;
+	text-decoration:none;
+}
+
+.stage_contents{
+	width: 75%;
+	margin: auto;
+}
+
+.stage-page h3{
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.stage_info{
+	display: inline-block;
+	text-align: left;
+	width: 55%;
+	padding:30px 0 30px 0 ;
+}
+
+.stage_contents img{
+	border: 1px solid #c7c7c7;
+}
+
+.stage_info h2{
+	/*border-bottom: 1px solid gray;*/
+}
+.stage_info p{
+	padding:0 0 0 10px;
+}
+
+.stage_info_reservation{
+	background-color: #000;
+	color: #fff;
+	font-size: 20px;
+	padding: 16px 0 16px 0;
+	text-align: right;
+	width: 45%;
+	background-color: black;
+	border-radius: 50px;
+	text-align: center;
+	margin: 120px 0 0;
+	float: right;
+}
+
+.stage_info_reservation a:link{
+	color:#fff;
+	text-decoration:none;
+}
+.stage_info_reservation a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+.stage_info_reservation a:hover{
+	color:#b62e55;
+	text-decoration:none;
+}
+.stage_info_reservation a:active{
+	color:#fff;
+	text-decoration:none;
+}
+
+.arasuji{
+	border-top:1px solid #b1b1b1;
+	padding:30px 0 30px 0 ;
+	font-size: 14px;
+}
+
+.stage_cast h3{
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+}
+
+.stage_cast {
+	background-color: brack:
+	text-align: left;
+	padding:0 0 50px 0 ;
+}
+
+.stage_cast img{
+	padding: 15px 12px;
+	background: #f7f7f7;
+	border: none;
+}
+
+.member-cast p{
+ margin-top: 10px;
+ padding-left: 25%;
+ font-size: 14px;
+}
+
+
+.member-cast a:link{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+.member-cast a:visited{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+.member-cast a:hover{
+	color:#b62e55;
+	text-decoration:none;
+}
+.member-cast a:active{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+
+.member-cast a:hover img{
+	filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+
+.stage_ticket-schedule h3{
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+}
+
+
+.stage_ticket-schedule table{
+	width: 100%;
+}
+.timetable table th{
+ padding:10px 20px;
+ text-align: center;
+ line-height: inherit;
+}
+
+.timetable table td{
+ padding:8px 20px;
+ text-align: center;
+}
+
+.stage_ticket-schedule{
+	padding-bottom:50px;
+}
+
+.ticket-price h3{
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+}
+
+.ticket-price{
+	padding-bottom: 50px;
+}
+
+.price-en{
+	font-size: 20px;
+}
+
+.reservation{
+	display: inline-block;
+	width: 100%;
+	margin:0 0 30px 0 ;
+	padding: 10px 0;
+	border-radius: 10px;
+}
+
+.reservation h3{
+	border-bottom: 1px solid gray;
+  font-size: 20px;
+}
+
+.stage_acces img{
+	width: 100%;
+  margin: 30px 0 30px 0;
+	display: inline-block;
+	border:solid 1px #ccc;
+	padding:1px;
+}
+
+.atelier-ikikata{
+	font-size: 14px;
+	color: #3f3f3f;
+}
+
+.stage_acces h3{
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+}
+.stage_acces{
+	padding: 30px 0 30px 0;
+}
+
+.stage_chirashi{
+	display: inline-block;
+/*	border-bottom:1px solid #b1b1b1;*/
+}
+
+.stage_chirashi h3{
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+}
+
+.stage_chirashi img{
+	float: left;
+	width: 100%;
+	margin:30px 0 30px 0 ;
+}
+
+.stage_staff{
+	margin-top: 30px;
+}
+
+.stage_staff h3{
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+}
+
+.stage_staff p{
+	font-size: 14px;
+}
+/* member */
+
+.pic-member_key{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.pic-member_key img{
+	width: 100%;
+}
+
+.pic-parson-top img {
+	padding: 25px 40px;
+	background: #f7f7f7;
+}
+
+.member-top-single p{
+ margin-top: 10px;
+ padding-left: 30%;
+ font-size: 14px;
+}
+
+.member-single p{
+ text-align: center;
+ font-size: 12px;
+}
+
+.pic-parson img {
+	margin: 15px 0 5px 0;
+	padding: 10px 20px;
+	background: #f7f7f7;
+}
+
+.pic-parson-top　img figcaption{
+	text-align: center;
+	color: #000;
+}
+
+.member-top-single a:link{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+.member-top-single a:visited{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+.member-top-single a:hover{
+	color:#b62e55;
+	text-decoration:none;
+}
+.member-top-single a:active{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+
+.member-top-single a:hover img{
+	filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.member-single a:link{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+.member-single a:visited{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+.member-single a:hover{
+	color:#b62e55;
+	text-decoration:none;
+}
+.member-single a:active{
+	color:#3f3f3f;
+	text-decoration:none;
+}
+
+.member-single a:hover img{
+	filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.member-single {
+	text-align: center;
+	margin: auto;
+}
+
+
+/* library */
+
+
+.library_list_table tr.clickable:hover{
+	background: #eeeeee;
+  cursor: pointer;
+}
+
+.library_list_table tr.clickable{
+	transition: 0.3s;
+}
+
+.library_toshi h2{
+	background-color: black;
+	color:#fff;
+	text-align: center;
+}
+
+.library_list tr{
+	text-align: left;
+}
+
+.library_list th{
+	color: #b62e55;
+	padding-top: 0px;
+	background-color: #eeeeee;
+}
+
+.library_list table {
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.library_list td {
+	font-size: 14px;
+	padding: 4px 0;
+	/* width: 20%; */
+}
+
+.library-list-tr {
+	margin-top: 24px;
+}
+
+.title{
+	width: 30%;
+}
+
+.wrigt{
+	width: 16%;
+}
+
+.direct {
+	width: 16%;
+}
+
+.date{
+	width: 16%;
+}
+
+.place{
+	width: 37%;
+}
+
+/* contact */
+.contact {
+	text-align: center;
+	font-size: 15px;
+	padding:30px 0 30px 0;
+}
+
+.tel_number {
+	font-size: 17px;
+}
+
+.tel_img img {
+	width: 10%;
+	float: right;
+	margin-bottom: 24px;
+}
+
+/* gokyoku */
+
+.gikyoku-key {
+	margin: auto;
+	text-align: center;
+}
+
+.gikyoku {
+	display: block;
+	padding: 30px 40px 30px 40px;
+}
+
+.gikyoku img{
+	padding: 25px 0;
+}
+
+.gikyoku_kato_img{
+	width: 35%;
+	float: left;
+}
+
+.gikyoku_kato_text{
+	margin-top: 20px;
+	width: 55%;
+	float: right;
+	font-size: 13px;
+}
+
+.gikyoku_about h2{
+	background-color: #dddddd;
+	font-size: 24px;
+}
+
+.gikyoku_about h3{
+	background-color: #dddddd;
+	font-size: 24px;
+}
+
+.timetable {
+	max-width: 100%;
+}

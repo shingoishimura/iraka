@@ -1,0 +1,466 @@
+@charset "utf-8";
+/************
+ * Responsive *
+*************/
+/* 900 - 1280 */
+@media only screen and (min-width:900px) and (max-width:1280px){
+
+}
+
+/* 768 - 899 */
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+}
+
+/* 320 - 767 */
+@media only screen and (min-width:320px) and (max-width:767px){
+.logo {
+    width: 120px;
+    margin: auto;
+    padding: 0px 0 0px 0;
+}
+
+body {
+  font-size: 14px;
+}
+
+.logo-text {
+    text-align: center;
+    font-size: 10px;
+		color: #b62e55;
+}
+
+nav {
+    text-align: center;
+    margin: 14px 0;
+}
+
+.float-none {
+	float: none;
+}
+
+.nav ul li {
+    list-style: none;
+    display: block;
+    max-width: 30%;
+    min-width: 90px;
+    line-height: 120%;
+    float: left;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    width: 15%;
+    min-width: 90px;
+    line-height: 120%;
+    margin-top: 8px;
+}
+.stage-right_area{
+    align-items: center;
+    
+}
+
+.stage-right_area h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.stage-right_area_text{
+    
+}
+
+.stage-info-image {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.press_left_area {
+    width: auto;
+    float: none;
+    padding: 0 0 0 0;
+}
+
+.key-text {
+    text-align: center;
+    font-size: 12px;
+    margin: 40px 0 40px 0;
+    font-family: ;
+}
+
+.what_is {
+	margin-top: 35px;
+	border-bottom: 1px solid gray;
+}
+
+.press_left_area img {
+    display: inline-block;
+    width: 100%;
+}
+
+.stageinfo_area  h3{
+	font-size: 24px;
+}
+
+.stageinfo_area h4 {
+	font-size: 18px;
+}
+
+.stage-right_area {
+    width: auto;
+    float: none;
+    padding: 24px 12px;
+    height: auto;
+}
+
+.stageinfo_left {
+    float: none;
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 24px 0px;
+}
+
+.index_atelier {
+background-color: black;
+color: #fff;
+font-size: 15px;
+padding: 16px 0 16px 0;
+text-align: center;
+width: auto;
+background-color: black;
+border-radius: 50px;
+margin: auto;
+text-align: center;
+margin: 24px 0;
+}
+
+.bunner-img {
+	margin: 6px 0;
+}
+
+.stageinfo_area p {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+/******
+ 			stage
+						*******/
+
+
+.stage_contents {
+    width: auto;
+    margin: auto;
+}
+
+.stage_info {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    padding: 16px 0;
+}
+
+.stage_info h2{
+	font-size: 26px;
+}
+
+.stage_ticket-schedule {
+    padding-bottom: 20px;
+}
+
+.price-en {
+    font-size: 16px;
+}
+
+.stage_info_reservation {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 0 6px 0;
+    text-align: center;
+    width: auto;
+    background-color: black;
+    border-radius: 50px;
+    text-align: center;
+    margin: 12px 0;
+    float: none;
+}
+
+.arasuji {
+    border-top: 1px solid #b1b1b1;
+    padding: 20px 0 20px 0;
+    font-size: 12px;
+}
+
+.stage_cast img {
+    padding: 10px 0 0 0;
+    background: none;
+}
+
+.member-cast p {
+    margin-top: auto;
+    padding-left: inherit;
+    font-size: 12px;
+    text-align: center;
+}
+
+.timetable table td {
+    padding: 6px 18px;
+    text-align: center;
+    /* margin: 26px; */
+}
+
+.timetable table th {
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.timetable {
+    max-width: 100%;
+    margin: 20px 0 0;
+}
+
+.reservation h3{
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+}
+
+.stage_staff p {
+    font-size: 10px;
+}
+
+.atelier-ikikata {
+    font-size: 12px;
+    color: #3f3f3f;
+}
+
+/******
+ 			contact
+						*******/
+
+.contact {
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 0;
+}
+
+.contact h2{
+	font-size: 18px;
+}
+
+/******
+ 			gikyoku_about
+						*******/
+
+.gikyoku {
+    display: block;
+    padding: 24px 0px;
+}
+
+.gikyoku_kato_img {
+    width: auto;
+    float: none;
+}
+
+.gikyoku_kato_text {
+    margin-top: auto;
+    width: auto;
+    float: none;
+    font-size: 14px;
+}
+
+.gikyoku_about h2 {
+    background-color: #dddddd;
+    font-size: 18px;
+}
+
+.gikyoku_info p{
+ font-size: 12px;
+}
+
+/******
+ 			フッター
+						*******/
+.footer-top {
+    width: 100%;
+    padding: 18px 0 110px 0;
+    background-color:black;
+    color: #888;
+    margin-top: 30px;
+    height: auto;
+}
+
+.logo-footer_area {
+    text-align: center;
+    width: auto;
+    float: none;
+    height: auto;
+
+}
+.footer_adress {
+    width: auto;
+    float: none;
+    height: auto;
+    text-align: center;
+    font-size: 10px;
+    line-height: 150%;
+    margin-top: 12px;
+}
+
+.footer_sns {
+    width: auto;
+    float: none;
+    height: auto;
+    max-width: 180px;
+    margin: auto;
+		margin-top: 12px;
+}
+
+.footer_sns img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+/******
+ 			about
+						*******/
+
+.about-img {
+  float: left;
+  margin: auto;
+}
+
+.about-img figcaption {
+    text-align: center;
+    font-size: 12px;
+    line-height: 130%;
+}
+
+.about_address {
+    font-size: 16px;
+}
+
+.about_atelier {
+    margin: 32px 0;
+}
+
+.atelier_map {
+    width: auto;
+    float: none;
+    padding: 0;
+    display: inline-block;
+    border: solid 1px #ccc;
+    padding: 1px;
+}
+
+.atelier_pic {
+    width: auto;
+    float: none;
+    margin: 10px;
+    text-align: center;
+}
+
+.about_workshop_kategorie {
+    background-color: #e3e3e3;
+    width: 100%;
+    color: #393939;
+}
+
+.ws_pic {
+    width: auto;
+    float: none;
+    height: auto;
+    padding: initial;
+}
+
+.ws_pic-text {
+    font-size: 12px;
+    text-align: right;
+}
+
+.tel-number {
+    background-color: #cccccccc;
+    width: auto;
+    float: none;
+    margin: 15px 0;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+.about_workshop {
+    padding: 50px 0 5px;
+}
+
+/******
+ 			メンバー
+						*******/
+
+.pic-parson-top img {
+    padding: 20px 25px;
+    background: #f7f7f7;
+}
+
+.member-top-single p {
+    margin-top: auto;
+    margin-bottom: 14px;
+    padding-left: inherit;
+    text-align: center;
+    font-size: 14px;
+}
+
+.pic-parson img {
+    margin-bottom: auto;
+    margin-top: 12px;
+    padding: 4px 4px;
+    background: #f7f7f7;
+}
+
+.member-single p {
+    text-align: center;
+    padding-right: 0%;
+    font-size: 12px;
+}
+
+.about_pic9 {
+    background-color: #f7f7f7;
+    padding: 13px 0;
+}
+
+.library_list td {
+    font-size: 12px;
+    padding: 4px 10px 5px 0px;
+    /* width: 20%; */
+    line-height: initial;
+}
+
+.library_list table tr{
+ 	border-bottom: 1px solid #eeeeee;
+}
+
+/*
+.top-tr {
+	border: none !important;
+}*/
+
+
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+/* .pc_sw { display: block; } */
+.sp_sw { display: none !important; }
+.pc_mw { display: block !important; }
+.sp_mw { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (min-width:320px) and (max-width:767px) {
+.pc_sw { display: none !important; }
+.sp_sw { display: block !important; }
+}@media only screen and (min-width:320px) and (max-width:1024px) {
+.pc_mw { display: none !important; }
+.sp_mw { display: block !important; }
+}
