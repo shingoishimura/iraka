@@ -1,6 +1,5 @@
 <div class="container">
   <header class="ticket_new_header">
-    <%# <%= link_to image_tag('irakalogo.png' , size: '185x50'), "/" %> 
 
   </header>
   <div class="ticket-sell-main">
@@ -10,7 +9,6 @@
 
     <%# <%= render 'shared/error_messages', model:  f.object %> 
 
-    <%# 出品画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
         チラシ画像
@@ -24,14 +22,13 @@
         <%= f.file_field :image, id:"ticket-image" %>
       </div>
     </div>
-    <%# /出品画像 %>
-    <%# 商品名と商品説明 %>
+    
     <div class="new-ticket">
       <div class="weight-bold-text">
         公演名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :ticket_name, class:"ticket-text", id:"ticket-name", placeholder:"公演名（必須 40文字まで)", maxlength:"40" %>
+      <%= f.text_area :program, class:"ticket-text", id:"ticket-name", placeholder:"公演名（必須 40文字まで)", maxlength:"40" %>
       <div class="tickets-explain">
         <div class="weight-bold-text">
           公演情報他
@@ -40,11 +37,18 @@
         <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"公演の説明（必須 1,000文字まで）作：井上ひさし　演出：佐野　暁　出演：石村勇二　等" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
-
-         <span>日付</span>
+      <div class="weight-bold-text">
+          <span>日付</span>
             <span class="indispensable">必須</span>
           </div>
           <%= f.text_field :date, class:"date-input", id:"ticket-date", placeholder:"例）2025-10-29" %>
+         </div>
+        <div class="weight-bold-text">
+      <span>時間</span>
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.text_field :time, class:"time-input", id:"ticket-time", placeholder:"例）14:00" %>
+  
     <%# /商品名と商品説明 %>
 
     <%# 商品の詳細 %>
@@ -92,6 +96,12 @@
     <%# /配送について %>
 
     <%# 販売価格 %>
+   <div class="weight-bold-text">
+    <span>チケット在庫枚数</span>
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.text_field :remaining, class:"remaining-input", id:"remaining", placeholder:"例）50枚" %>
+  
     <div class="sell-price">
       <div class="weight-bold-text question-text">
         <span>チケット販売価格<br>(¥300〜9,999,999)</span>
@@ -106,57 +116,15 @@
           <span class="sell-yen">¥</span>
           <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）300" %>
         </div>
-        <%# <div class="price-content"> %>
-          <%# <span>販売手数料 (10%)</span> %>
-          <%# <span>
-            <span id='add-tax-price'></span>円
-          </span>
-        </div>
-        <div class="price-content">
-          <span>販売利益</span>
-          <span>
-            <span id='profit'></span>円
-        </div>
-        </span>
-      </div>
-    </div> %>
-    <%# /販売価格 %>
-
-    <%# 注意書き %>
-    <%# <div class="caution">
-      <p class="sentence">
-        <a href="#">禁止されている出品、</a>
-        <a href="#">行為</a>
-        を必ずご確認ください。
-      </p>
-      <p class="sentence">
-        またブランド品でシリアルナンバー等がある場合はご記載ください。
-        <a href="#">偽ブランドの販売</a>
-        は犯罪であり処罰される可能性があります。
-      </p>
-      <p class="sentence">
-        また、出品をもちまして
-        <a href="#">加盟店規約</a>
-        に同意したことになります。
-      </p>
-    </div> %>
-    <%# /注意書き %>
-    <%# 下部ボタン %>
+        <p>　</p>
     <div class="sell-btn-contents">
-      <%= f.submit "出品する" ,class:"sell-btn" %>
+      <%= f.submit "公演を登録する" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
-    <%# /下部ボタン %>
   </div>
   <% end %>
 
   <footer class="items-sell-footer">
-    <%# <ul class="menu">
-      <li><a href="#">プライバシーポリシー</a></li>
-      <li><a href="#">フリマ利用規約</a></li>
-      <li><a href="#">特定商取引に関する表記</a></li>
-    </ul> %>
-    <%# <%= link_to image_tag('irakalogo.png' , size: '185x50'), "/" %> 
     <p class="inc">
       ©︎Iraskanonamiza,Inc.
     </p>
