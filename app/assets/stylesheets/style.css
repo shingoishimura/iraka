@@ -212,7 +212,9 @@ body>article{
 
 .press-top_area{
 	width:100%;
+	height: 100%;
 	/* margin: 30px 0 0 0; */
+	background-color: fuchsia;
 }
 
 
@@ -223,10 +225,14 @@ body>article{
 	float: left;
 	display: flex;
 	justify-content:center;
-	align-items: center;
+	align-items: center;	
+	background-color: khaki;
+	
 	
 	
 }
+
+
 
 .press-left_area_sp{
 	width:  100%;
@@ -239,12 +245,13 @@ body>article{
 }
 
 .press-left_area img{
-	
-		
+	background-color: gainsboro;
+	width: 280px;
+	height:380px;
+	border: 1px solid gray;
 }
 
 .press-right_area{
-	/* background-color: powderblue; */
 	width: 50%;
 	float: right;
 	padding: 50px 0;
@@ -252,6 +259,7 @@ body>article{
 	display: flex;
 	justify-content:center;
 	align-items: center;
+	background-color: cornsilk;
 
 }
 
@@ -259,10 +267,10 @@ body>article{
 	display:inline-block;
 	width:70%;
 	margin: 10px auto;
+	background-color: dodgerblue;
 }
 
 .press-right_area_sp{
-	/* background-color: powderblue; */
 	width: 100%;
 	padding: 50px 0;
 	height: 425px;

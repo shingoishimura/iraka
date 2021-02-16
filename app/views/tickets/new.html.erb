@@ -1,20 +1,20 @@
-<div class="container">
+<html
+><div class="container">
+ <body>
   <header class="ticket_new_header">
-
   </header>
   <div class="ticket-sell-main">
     <h2 class="ticket-sell-title">公演の情報を入力</h2>
     <p>　</p>
-    <%= form_with model: @item ,local: true do |f| %>
+    <%= form_with model: @ticket ,local: true do |f| %>
 
-    <%# <%= render 'shared/error_messages', model:  f.object %> 
+     <%= render 'shared/error_messages', model:  f.object %> 
 
     <div class="img-upload">
       <div class="weight-bold-text">
         チラシ画像
         <span class="indispensable">必須</span>
       </div>
-      <p>　</p>
       <div class="click-upload">
         <p>
           クリックしてファイルをアップロード
@@ -22,92 +22,54 @@
         <%= f.file_field :image, id:"ticket-image" %>
       </div>
     </div>
-    
+
+
     <div class="new-ticket">
       <div class="weight-bold-text">
         公演名
         <span class="indispensable">必須</span>
       </div>
       <%= f.text_area :program, class:"ticket-text", id:"ticket-name", placeholder:"公演名（必須 40文字まで)", maxlength:"40" %>
+    </div>
+
       <div class="tickets-explain">
         <div class="weight-bold-text">
           公演情報他
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"公演の説明（必須 1,000文字まで）作：井上ひさし　演出：佐野　暁　出演：石村勇二　等" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"公演の説明（必須 1,000文字まで）作：井上ひさし　演出：佐野　暁　出演：石村勇二　等" ,size: "55x10",maxlength:"1000" %>
       </div>
-    </div>
+
+      <div class="weight-bold-text">
+          <span>場所</span>
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.text_field :venue, class:"venue-input", id:"ticket-venue", placeholder:"例）スタジオさるとび" %>
+
       <div class="weight-bold-text">
           <span>日付</span>
             <span class="indispensable">必須</span>
           </div>
-          <%= f.text_field :date, class:"date-input", id:"ticket-date", placeholder:"例）2025-10-29" %>
-         </div>
+          <%= f.text_field :date, class:"date-input", id:"ticket-date", placeholder:"例）2022年10月29" %>
+         
+
         <div class="weight-bold-text">
-      <span>時間</span>
+         <span>時間</span>
+            <span class="indispensable">必須</span>
+            </div>
+          <%= f.text_field :time, class:"time-input", id:"ticket-time", placeholder:"例）13:00開場　14:00開演" %>
+          
+
+        <div class="weight-bold-text">
+          <span>販売チケット枚数</span>
             <span class="indispensable">必須</span>
           </div>
-          <%= f.text_field :time, class:"time-input", id:"ticket-time", placeholder:"例）14:00" %>
-  
-    <%# /商品名と商品説明 %>
+          <%= f.text_field :remaining, class:"remaining-input", id:"remaining", placeholder:"例）限定50枚" %>
+      
 
-    <%# 商品の詳細 %>
-    <%# <div class="items-detail">
-      <div class="weight-bold-text">商品の詳細</div>
-      <div class="form">
-        <div class="weight-bold-text">
-          カテゴリー
-          <span class="indispensable">必須</span>
-        </div> %>
-        <%# <%= f.collection_select(:category_id,Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %> 
-        <%# <div class="weight-bold-text">
-          商品の状態
-          <span class="indispensable">必須</span>
-        </div> %>
-        <%# <%= f.collection_select(:state_id,State.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
-      <%# </div> 
-    </div> %>
-    <%# /商品の詳細 %>
-
-    <%# 配送について %>
-    <%# <div class="items-detail">
-      <div class="weight-bold-text question-text">
-        <span>配送について</span>
-        <a class="question" href="#">?</a>
-      </div>
-      <div class="form">
-        <div class="weight-bold-text">
-          配送料の負担
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.collection_select(:send_fee_id,SendFee.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
-        <%# <div class="weight-bold-text">
-          発送元の地域
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
-        <%# <div class="weight-bold-text">
-          発送までの日数
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.collection_select(:send_period_id,SendPeriod.all, :id, :data, {}, {class:"select-box", id:"item-scheduled-delivery"}) %>
-      <%# </div>
-    </div>  %> 
-    <%# /配送について %>
-
-    <%# 販売価格 %>
-   <div class="weight-bold-text">
-    <span>チケット在庫枚数</span>
-            <span class="indispensable">必須</span>
-          </div>
-          <%= f.text_field :remaining, class:"remaining-input", id:"remaining", placeholder:"例）50枚" %>
-  
-    <div class="sell-price">
       <div class="weight-bold-text question-text">
         <span>チケット販売価格<br>(¥300〜9,999,999)</span>
-        <a class="question" href="#">?</a>
       </div>
-      <div>
         <div class="price-content">
           <div class="price-text">
             <span>価格</span>
@@ -121,12 +83,13 @@
       <%= f.submit "公演を登録する" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
+    <% end %>
   </div>
-  <% end %>
-
   <footer class="items-sell-footer">
     <p class="inc">
       ©︎Iraskanonamiza,Inc.
     </p>
   </footer>
 </div>
+</body>
+</html>

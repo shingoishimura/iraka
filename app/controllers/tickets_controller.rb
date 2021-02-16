@@ -5,26 +5,22 @@ class TicketsController < ApplicationController
 
   def new
     @ticket = Ticket.new
-  
   end
 
-  def create 
-   @ticket = Ticket.new(ticket_params)
-   if @ticket.save
-
-    redirect_to root_path
-  else
-    render :new
+  def create
+    @ticket = Ticket.new(ticket_params)
+    if @ticket.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
-  end
 
-  def show
-
-  end
+  def show; end
 
   private
 
   def ticket_params
-    params.reqire(:ticket).permit(:program, :venue, :date, :time, :price,:remaining ).merge(user_id: current_user.id)
+    params.require(:ticket).permit(:program, :text, :venue, :date, :time, :price, :remaining, :image)
   end
 end
