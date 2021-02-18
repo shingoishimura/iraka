@@ -1,0 +1,51 @@
+<% if @tickets[0] != nil %> 
+    <nav class="sp_sw">
+     <div class="what_is">
+      <h2 id="stage_info">公演情報<br><span class="nav-eg">NEXT STAGE</span></h2>
+      </div>
+			<% @tickets.each do |ticket| %> 
+      <div class="press-top_area">
+    
+    <div class="press-left_area_sp">
+        <div class="press-left_area img">
+         
+         <%# <%= link_to "#" do %>  
+         <% if ticket.image.attached? %>
+         <%= image_tag ticket.image %> 
+         <% end %>
+      </div>
+		</div>
+
+        <a href=""><div class="press-right_area_sp"> 
+        <div class="press-right_area_text_sp">      
+        <div class='ticket-info'>
+          <h3 class='program'>
+            <%= ticket.program %>
+          </h3>
+        <div class='ticket-text'>
+          <%= ticket.text%>
+					</div>
+					<div class='ticket-venue'>
+          <%= ticket.venue %>
+					</div>
+					<div class='ticket-date'>
+          <%= ticket.date %>
+					</div>
+					<div class='ticket-time'>
+          <%= ticket.time %>
+					</div>
+          <div class='ticket-item-price'>
+          <%= ticket.price %>円
+          </div>
+					<div class='ticket-remaining'> 
+          限定<%= ticket.remaining %>席
+        </div>
+				</div>
+        </div>
+        </div>
+				</div>
+        </a>
+      
+       <%end%>
+    <% end %> 
+    </nav> 

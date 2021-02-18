@@ -40,34 +40,34 @@
         <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"公演の説明（必須 1,000文字まで）作：井上ひさし　演出：佐野　暁　出演：石村勇二　等" ,size: "55x10",maxlength:"1000" %>
       </div>
 
-      <div class="weight-bold-text">
+      <%# <div class="weight-bold-text">
           <span>場所</span>
             <span class="indispensable">必須</span>
           </div>
           <%= f.text_field :venue, class:"venue-input", id:"ticket-venue", placeholder:"例）スタジオさるとび" %>
 
-      <div class="weight-bold-text">
+      <%# <div class="weight-bold-text">
           <span>日付</span>
             <span class="indispensable">必須</span>
           </div>
           <%= f.text_field :date, class:"date-input", id:"ticket-date", placeholder:"例）2022年10月29" %>
-         
+          
 
-        <div class="weight-bold-text">
+        <%# <div class="weight-bold-text">
          <span>時間</span>
             <span class="indispensable">必須</span>
             </div>
           <%= f.text_field :time, class:"time-input", id:"ticket-time", placeholder:"例）13:00開場　14:00開演" %>
-          
+           
 
-        <div class="weight-bold-text">
+        <%# <div class="weight-bold-text">
           <span>販売チケット枚数</span>
             <span class="indispensable">必須</span>
           </div>
           <%= f.text_field :remaining, class:"remaining-input", id:"remaining", placeholder:"例）限定50枚" %>
-      
+       
 
-      <div class="weight-bold-text question-text">
+      <%# <div class="weight-bold-text question-text">
         <span>チケット販売価格<br>(¥300〜9,999,999)</span>
       </div>
         <div class="price-content">
@@ -77,7 +77,7 @@
           </div>
           <span class="sell-yen">¥</span>
           <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）300" %>
-        </div>
+        <%# </div>  %>
         <p>　</p>
     <div class="sell-btn-contents">
       <%= f.submit "公演を登録する" ,class:"sell-btn" %>

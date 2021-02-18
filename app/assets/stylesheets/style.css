@@ -214,7 +214,7 @@ body>article{
 	width:100%;
 	height: 100%;
 	/* margin: 30px 0 0 0; */
-	background-color: fuchsia;
+
 }
 
 
@@ -225,8 +225,7 @@ body>article{
 	float: left;
 	display: flex;
 	justify-content:center;
-	align-items: center;	
-	background-color: khaki;
+	align-items: center;
 	
 	
 	
@@ -251,6 +250,13 @@ body>article{
 	border: 1px solid gray;
 }
 
+.press-left_area_sp img{
+	background-color: gainsboro;
+	width: 280px;
+	height:380px;
+	border: 1px solid gray;
+}
+
 .press-right_area{
 	width: 50%;
 	float: right;
@@ -259,7 +265,6 @@ body>article{
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	background-color: cornsilk;
 
 }
 
@@ -267,7 +272,6 @@ body>article{
 	display:inline-block;
 	width:70%;
 	margin: 10px auto;
-	background-color: dodgerblue;
 }
 
 .press-right_area_sp{
@@ -286,6 +290,10 @@ body>article{
 .press-right_area_text_sp{
 	display:inline-block;
 	width:80%;
+}
+
+.ticket-text{
+
 }
 
 .twitter{

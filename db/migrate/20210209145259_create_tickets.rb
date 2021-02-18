@@ -3,11 +3,11 @@ class CreateTickets < ActiveRecord::Migration[6.0]
     create_table :tickets do |t|
       t.string :program, null: false
       t.string :text
-      t.string :venue,        null: false
-      t.string :date,         null: false
-      t.string :time,         null: false
-      t.integer :price, null: false
-      t.integer :remaining, null: false
+      t.string :venue
+      t.string :date
+      t.string :time
+      t.integer :price
+      t.integer :remaining
       t.timestamps
     end
   end
