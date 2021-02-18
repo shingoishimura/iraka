@@ -1,24 +1,25 @@
 # README
+## tickets テーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column           | Type        | Options                           |
+| --------         | ------      | -----------                       |
+| program          | string      | null: false                       |
+| text             | text        |                                   |
 
-Things you may want to cover:
+<!-- ### Association 
 
-* Ruby version
+- has_many    :order
 
-* System dependencies
+## orders テーブル
 
-* Configuration
+| Column           | Type        | Options                           |
+| --------         | ------      | -----------                       |
+| name             | string      | null: false                       |
+| name_kana        | string      | null: false                       | 
+| ticket_id        | references  | null: false,foreign_key: true     |
+| tel_num          | integer     | null: false                       |
+| sheet            | integer     | null: false                       |
 
-* Database creation
+### Association
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- belongs_to :ticket -->
