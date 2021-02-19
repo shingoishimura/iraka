@@ -85,13 +85,13 @@
 
 ```ターミナル
 
-%cd iraka
+% cd iraka
 
 ```
 
 ```ターミナル
 
-%bundle install
+% bundle install
 
 ```
 
