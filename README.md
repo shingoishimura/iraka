@@ -72,6 +72,8 @@
 - belongs_to :ticket 
 
 # ER図
+<img width="712" alt="ER2" src="https://user-images.githubusercontent.com/76483672/108444880-c62a6b00-729e-11eb-8a3c-0505cdd3b47e.png">
+
 
 
 
