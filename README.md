@@ -73,6 +73,8 @@
 
 # ER図
 
+<img width="716" alt="ER3" src="https://user-images.githubusercontent.com/76483672/108445093-215c5d80-729f-11eb-8ef5-e8e65638f85e.png">
+
 
 
 ## ローカルでの起動方法
@@ -89,7 +91,7 @@
 
 ```ターミナル
 
-bundle install
+%bundle install
 
 ```
 
