@@ -25,5 +25,71 @@
 
 * 今後実装予定の機能：　編集機能、削除機能、購入機能
 
-* 現時点でのデータベース設計　https://gyazo.com/d9f316694c5934809b85dff532f2b487
-* 
+* 現時点でのデータベース設計　# README
+## tickets テーブル
+
+| Column           | Type        | Options                           |
+| --------         | ------      | -----------                       |
+| program          | string      | null: false                       |
+| text             | text        |                                   |
+| venue            | string      | null: false                       |
+| date             | string      | null: false                       | 
+| time             | string      | null: false                       |
+| price            | integer     | null: false                       |
+| remaining        | integer     | null: false                       |
+
+
+### Association 
+
+- has_many    :order
+
+## orders テーブル
+
+| Column           | Type        | Options                           |
+| --------         | ------      | -----------                       |
+| name             | string      | null: false                       |
+| name_kana        | string      | null: false                       | 
+| ticket_id        | references  | null: false,foreign_key: true     |
+| tel_num          | integer     | null: false                       |
+| sheet            | integer     | null: false                       |
+
+### Association
+
+- belongs_to :ticket 
+
+* ER図
+https://gyazo.com/d099a6ea02b3a41a16152308c244b5bc
+
+* ローカルでの起動方法
+事前に用意していただく起動環境　MacOS - Ruby 2.6.5 - Ruby on Rails 6.0.0 - JavaScript - SQL - Git - GitHub 
+
+ターミナル操作
+
+```ターミナル
+%cd iraka
+```
+
+```ターミナル
+bundle install
+```
+
+```ターミナル
+% brew install nodejs
+```
+
+```ターミナル
+% brew install yarn
+```
+
+```ターミナル
+% rails db:create
+```
+
+```ターミナル
+% rails db:migrate
+```
+
+```ターミナル
+% rails s
+```
+
