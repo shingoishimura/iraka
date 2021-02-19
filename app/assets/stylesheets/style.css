@@ -260,7 +260,7 @@ body>article{
 .press-right_area{
 	width: 50%;
 	float: right;
-	padding: 50px 0;
+	padding: 50px 0 50px 0;
 	height: 425px;
 	display: flex;
 	justify-content:center;
