@@ -167,7 +167,7 @@
         <div class="press-right_area_text">      
         <div class='ticket-info'>
           <h3 class='program'>
-            <%= ticket.program %>
+            <%= simple_format(ticket.program) %>
           </h3>
           <div class='ticket-text'>
           <%= simple_format(ticket.text)%>
@@ -223,7 +223,7 @@
         <div class="press-right_area_text_sp">      
         <div class='ticket-info'>
           <h3 class='program'>
-            <%= ticket.program %>
+            <%= simple_format(ticket.program) %>
           </h3>
         <div class='ticket-text'>
           <%= simple_format(ticket.text)%>
@@ -293,7 +293,7 @@
 				<div class= video >
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/TxEVSLBe9wc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
-	　<div class="what_is"><h2 align="center">関係各団体<br><span class="nav-eg">SPECIAL THANKS</span></h2>
+	<%# 　<div class="what_is"><h2 align="center">関係各団体<br><span class="nav-eg">SPECIAL THANKS</span></h2>
 			</div>
 			<div class="container">
 				<div class="bunner">
@@ -303,7 +303,7 @@
 						</div>
 						<div class="box col-xs-12 col-sm-12 col-md-4 col-lg-4 bunner-img"> 
 							<a href="http://sarutobisan.jugem.jp/"target="_blank"><img src="/assets/sarutobi.png" ></a>
-						</div>
+						</div> %>
 					　　<!--div class="bunner">
 						<div class="box col-xs-6 col-sm-6 col-md-3 col-lg-3">
 							<a href="リンク先のURL"><img src="./img/interface/bunner-phot.jpg"></a>

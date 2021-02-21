@@ -21,6 +21,7 @@
         </p>
         <%= f.file_field :image, id:"ticket-image" %>
       </div>
+      <div id="image-list"></div>
     </div>
 
 
@@ -29,7 +30,7 @@
         公演名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :program, class:"ticket-text", id:"ticket-name", placeholder:"公演名（必須 40文字まで)", maxlength:"40" %>
+      <%= f.text_area :program, class:"ticket-text", id:"ticket-name", placeholder:"公演名（必須 45文字まで)※スペースや改行を表示に反映できますので活用して下さい", size: "28x3",maxlength:"45" %>
     </div>
 
       <div class="tickets-explain">
@@ -37,7 +38,24 @@
           公演情報他
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"公演の説明（必須 1,000文字まで）作：井上ひさし　演出：佐野　暁　出演：石村勇二　等" ,size: "55x10",maxlength:"1000" %>
+        <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"公演の説明（252文字まで）
+
+【例】2021 冬　公演予定　石村勇二独演会　
+
+作：　井上ひさし
+
+演出：　佐野　暁
+
+場所：　スタジオさるとび
+
+[出演]
+石村勇二
+
+新型コロナウィルスによる感染対策の為、
+現在開催を延期しております。
+開催決定次第お伝えいたします。
+その他最新情報は公式twitterをご確認下さい　
+※スペースや改行を表示に反映できますので活用して下さい" ,size: "55x10",maxlength:"252" %>
       </div>
 
       <%# <div class="weight-bold-text">
