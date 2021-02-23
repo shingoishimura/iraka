@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: iraka_production
-  username: iraka
-  password: <%= ENV['IRAKA_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
