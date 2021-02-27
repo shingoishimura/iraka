@@ -32,10 +32,10 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capistrano'
-  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano-rbenv'
 end
 
 group :development do
@@ -61,8 +61,8 @@ group :production do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'aws-sdk-s3', require: false
 gem 'image_processing', '~> 1.2'
 gem 'mini_magick'
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'pry-rails'
-gem "aws-sdk-s3", require: false
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

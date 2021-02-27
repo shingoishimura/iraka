@@ -9,6 +9,5 @@ class Ticket < ApplicationRecord
     #  validates :time
     #  validates :price
     #  validates :remaining
-            
-end
+  end
 end

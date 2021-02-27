@@ -10,28 +10,32 @@
 
      <%= render 'shared/error_messages', model:  f.object %> 
 
-    <div class="img-upload">
-      <div class="weight-bold-text">
+   <div class="img-upload-program">
+     <div class="img-upload-program-left">
+       <div class="image-uplord-text">
         チラシ画像
         <span class="indispensable">必須</span>
-      </div>
-      <div class="click-upload">
-        <p>
-          クリックしてファイルをアップロード
-        </p>
+       </div>
+       <div class="click-upload">
         <%= f.file_field :image, id:"ticket-image" %>
+       </div>
       </div>
-      <div id="image-list"></div>
+
+      <div class="img-upload-program-left">
+       <div class="image-previw" id="image-list">
+       </div>
+     </div>
     </div>
 
+      <div class="new-ticket">
+        <div class="weight-bold-text">
+         公演名
+         <span class="program">必須</span>
+        </div>
+       <%= f.text_area :program, class:"ticket-text", id:"ticket-name", placeholder:"公演名（必須 45文字まで)※スペースや改行を表示に反映できますので活用して下さい", size: "28x3",maxlength:"45" %>
+     </div>
 
-    <div class="new-ticket">
-      <div class="weight-bold-text">
-        公演名
-        <span class="indispensable">必須</span>
-      </div>
-      <%= f.text_area :program, class:"ticket-text", id:"ticket-name", placeholder:"公演名（必須 45文字まで)※スペースや改行を表示に反映できますので活用して下さい", size: "28x3",maxlength:"45" %>
-    </div>
+      
 
       <div class="tickets-explain">
         <div class="weight-bold-text">

@@ -6,3 +6,38 @@
   margin: auto;
  padding: 20px;
 }
+
+.img-upload-program {
+display: flex;
+}
+
+.image-upload-text {
+  
+}
+
+.image-previw {
+  margin: 10px auto auto 30px;
+  height: 130px;
+  width: 100px;
+  background-color: gainsboro;
+}
+
+.click-upload {
+  width: 30%;
+  background: red;
+
+}
+
+.img-upload-program-left{
+  align-content: center;
+  
+  width: 300px;
+  height: 150px;
+  
+}
+
+.img-upload-program-right{
+  width: 50%;
+  background-color:blue;
+
+}
