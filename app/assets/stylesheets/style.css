@@ -278,7 +278,7 @@ body>article{
 	width: 100%;
 	padding: 50px 0;
 	height: 425px;
-	display: flex;
+	display:flex;
 	justify-content:center;
 	align-items: center;
 	

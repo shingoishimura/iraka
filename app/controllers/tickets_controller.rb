@@ -3,11 +3,37 @@ class TicketsController < ApplicationController
     @tickets = Ticket.all
   end
 
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+    if @ticket.update(item_params)
+      redirect_to ticket_path
+
+    else
+      render :edit
+    end
+  end
+
+
+    def destroy
+      if @ticket.destroy
+      redirect_to root_path
+
+      else
+        render :show
+    end
+  end
+
   def new
     authenticate_or_request_with_http_basic do |username, password|
       username == ENV['BASIC_AUTH_USER'] && password == ENV['BASIC_AUTH_PASSWORD']
     end
     @ticket = Ticket.new
+    @tickets = Ticket.all
   end
 
   def create
@@ -19,7 +45,7 @@ class TicketsController < ApplicationController
     end
   end
 
-  def show; end
+  
 
   private
 

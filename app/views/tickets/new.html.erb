@@ -107,6 +107,116 @@
     </div>
     <% end %>
   </div>
+
+  <% if @tickets[0] != nil %> 
+    <nav class="pc_sw">
+     <div class="what_is">
+      <h2 id="stage_info">現在登録中の公演情報<br><span class="nav-eg">編集したい公演の画像、または文章をクリックして下さい</span></h2>
+      </div>
+			<% @tickets.each do |ticket| %> 
+      <div class="press-top_area">
+    
+       <div class="press-left_area_pc">
+       <div class="press-left_area img">
+         
+         
+         <% if ticket.image.attached? %>
+				 <%= link_to ticket.image, 'data-lightbox': ticket.image do%>  
+         <%= image_tag ticket.image %>
+         <% end %>
+				 <% end %>
+       </div>
+		   </div>
+
+        <a href=""><div class="press-right_area"> 
+        <div class="press-right_area_text">      
+        <div class='ticket-info'>
+          <h3 class='program'>
+            <%= simple_format(ticket.program) %>
+          </h3>
+          <div class='ticket-text'>
+          <%= simple_format(ticket.text)%>
+					</div>
+					<%# <div class='ticket-venue'>
+          <%= ticket.venue %>
+					<%# </div>
+					<div class='ticket-date'>
+          <%= ticket.date %>
+					<%# </div>
+					<div class='ticket-time'>
+          <%= ticket.time %>
+					<%# </div>
+          <div class='ticket-item-price'>
+          <%= ticket.price円
+          </div>
+					<div class='ticket-remaining'> 
+          <%# 限定<%= ticket.remaining 席%> 
+        <%# </div> %> 
+				</div>
+        </div>
+        </div>
+				</div>
+				</a>
+      
+       <%end%>
+    <% end %> 
+    </nav> 
+
+	
+
+	<% if @tickets[0] != nil %> 
+    <nav class="sp_sw">
+     <div class="what_is">
+      <h2 id="stage_info">現在登録中の公演情報一覧<br><span class="nav-eg">編集したい公演の画像、または文章をクリックして下さい</span></h2>
+      </div>
+			<% @tickets.each do |ticket| %> 
+      <div class="press-top_area">
+    
+    <div class="press-left_area_sp">
+        <div class="press-left_area_sp img">
+         
+         
+         <% if ticket.image.attached? %>
+				 <%= link_to ticket.image, 'data-lightbox': ticket.image do%>  
+         <%= image_tag ticket.image %> 
+         <%end%>
+				 <% end %>
+      </div>
+		</div>
+
+        <a href=""><div class="press-right_area_sp"> 
+        <div class="press-right_area_text_sp">      
+        <div class='ticket-info'>
+          <h3 class='program'>
+            <%= simple_format(ticket.program) %>
+          </h3>
+        <div class='ticket-text'>
+          <%= simple_format(ticket.text)%>
+					</div>
+					<%# <div class='ticket-venue'>
+          <%= ticket.venue %>
+					<%# </div>
+					<div class='ticket-date'>
+          <%= ticket.date %>
+					<%# </div>
+					<div class='ticket-time'>
+          <%= ticket.time %>
+					<%# </div>
+          <div class='ticket-item-price'>
+          <%= ticket.price円
+          <%# </div>
+					<div class='ticket-remaining'> 
+          <%# 限定<%= ticket.remaining %>
+        <%# </div> %>
+				</div>
+        </div>
+        </div>
+				</div>
+        </a>
+      
+       <%end%>
+    <% end %> 
+    </nav> 
   <footer class="items-sell-footer">
     <p class="inc">
       ©︎Iraskanonamiza,Inc.
