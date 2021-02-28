@@ -16,9 +16,9 @@ display: flex;
 }
 
 .image-previw {
-  margin: 10px auto auto 30px;
-  height: 130px;
-  width: 100px;
+  margin: 10px auto auto 10px;
+  height: 175px;
+  width: 145px;
   background-color: gainsboro;
 }
 
