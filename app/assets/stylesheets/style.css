@@ -7,6 +7,12 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, 
 	margin: auto;
 }
 
+header {
+	position: relative;
+	height: 400px;
+	background: url('irakaheader.png') center / cover;
+}
+
 body{
 	width: 100%;
 	margin:auto;
@@ -29,7 +35,12 @@ body{
 
 .logo-text {
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
+	color: white;
+	text-shadow: 2px  2px 10px #777 ,
+	-2px  2px 10px #777 ,
+	 2px -2px 10px #777 ,
+	-2px -2px 10px #777;
 }
 
 nav{
@@ -52,7 +63,11 @@ nav ul li {
 
 nav ul li a{
 	text-decoration: none;
-	color: #333;
+	color:white;
+	text-shadow: 2px  2px 10px #777 ,
+	-2px  2px 10px #777 ,
+	 2px -2px 10px #777 ,
+	-2px -2px 10px #777;
 }
 
 nav ul li.current a{
@@ -62,11 +77,12 @@ nav ul li.current a{
 
 nav ul li a:hover{
 	text-decoration:none;
-	color:#b62e55;
+	color: #F33135;
 }
 
 .nav-eg {
 	font-size: 11px;
+	
 }
 
 body>footer>small{
