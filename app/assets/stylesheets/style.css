@@ -10,7 +10,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, 
 header {
 	position: relative;
 	height: 400px;
-	background: url(/images/irakaheader.png) center / cover;
+	background: url(/images/irakaheader_sp.png) center / cover;
 }
 
 body{
