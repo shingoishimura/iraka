@@ -24,13 +24,31 @@ body{
 }
 
 .logo{
-	width: 160px;
-	margin:auto;
-	padding: 20px 0 10px 0;
+	width: 100px;
+	margin: 10px;
+	float: left;
 }
 
 .logo img {
 	width: 100%;
+}
+
+.title-box{
+	width: 100%;
+	display: flex;
+	
+}
+
+.title{
+	margin: auto;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, serif;
+
+
+
+
 }
 
 .logo-text {
