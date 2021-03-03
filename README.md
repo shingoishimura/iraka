@@ -2,29 +2,37 @@
 
 
 ## アプリケーション名
-石村勇二公式ホームページ兼公演登録アプリ
+劇団甍丿波座公式ホームページ兼公演登録アプリ
+
 
 
 ## アプリケーション概要　
 公演予定内容を登録し一覧表示します
 
+私の父の私的劇団「甍丿波座」のホームページです。
+Ruby, Ruby on railsを使用し、公演情報を登録し、トップページへ表示出来るように実装しました。
 
 # URL
 本アドレス　http://35.72.140.27/
 サブアドレス https://iraka.herokuapp.com/
 
-※予期せぬエラー等で本アドレスが表示されない場合はサブアドレスをお試し下さい。尚、表示までに少し時間がかかります。ご了承下さい。
+※予期せぬエラー等で本アドレスが表示されない場合はサブアドレスをお試し下さい。尚、サブアドレスは表示までに少し時間がかかります。ご了承下さい。
 
 # SCREEN SHOTS
 
-![irakascreen1](https://user-images.githubusercontent.com/76483672/109883508-dbe85900-7cbe-11eb-9988-aa2610a4b3de.jpg)
-
+トップページ
 ![irakascreen1_pc](https://user-images.githubusercontent.com/76483672/109883500-da1e9580-7cbe-11eb-961a-19c63eefedd1.jpg)
 
+スマートフォン版　トップページ
+![irakascreen1](https://user-images.githubusercontent.com/76483672/109883508-dbe85900-7cbe-11eb-9988-aa2610a4b3de.jpg)
+
+登録された公演情報の表示
 ![irakascreen2](https://user-images.githubusercontent.com/76483672/109883493-d854d200-7cbe-11eb-9592-ecedf5249e63.jpg)
 
+フッター
 ![irakascreen3](https://user-images.githubusercontent.com/76483672/109883490-d723a500-7cbe-11eb-926c-3e94df401f1c.jpg)
 
+公演登録ページ
 ![irakascreen_ticket_new](https://user-images.githubusercontent.com/76483672/109883476-d3901e00-7cbe-11eb-870a-6bb411f67d81.jpg)
 
 ## 利用方法
