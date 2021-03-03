@@ -26,7 +26,7 @@ Ruby, Ruby on railsを使用し、公演情報を登録し、トップページ�
 ・スマートフォン版　トップページ
 ![irakascreen1](https://user-images.githubusercontent.com/76483672/109883508-dbe85900-7cbe-11eb-9988-aa2610a4b3de.jpg)
 
-登録された公演情報の表示
+・登録された公演情報の表示
 ![irakascreen2](https://user-images.githubusercontent.com/76483672/109883493-d854d200-7cbe-11eb-9592-ecedf5249e63.jpg)
 
 ・フッター
