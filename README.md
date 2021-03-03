@@ -15,6 +15,18 @@
 
 ※予期せぬエラー等で本アドレスが表示されない場合はサブアドレスをお試し下さい。尚、表示までに少し時間がかかります。ご了承下さい。
 
+# SCREEN SHOTS
+
+![irakascreen1](https://user-images.githubusercontent.com/76483672/109883508-dbe85900-7cbe-11eb-9988-aa2610a4b3de.jpg)
+
+![irakascreen1_pc](https://user-images.githubusercontent.com/76483672/109883500-da1e9580-7cbe-11eb-961a-19c63eefedd1.jpg)
+
+![irakascreen2](https://user-images.githubusercontent.com/76483672/109883493-d854d200-7cbe-11eb-9592-ecedf5249e63.jpg)
+
+![irakascreen3](https://user-images.githubusercontent.com/76483672/109883490-d723a500-7cbe-11eb-926c-3e94df401f1c.jpg)
+
+![irakascreen_ticket_new](https://user-images.githubusercontent.com/76483672/109883476-d3901e00-7cbe-11eb-870a-6bb411f67d81.jpg)
+
 ## 利用方法
 ページフッター左下の「甍」ロゴをクリックし、ユーザー名とパスワードを入力すると予定公演内容入力フォームへ移動します。画像を選択、公演名を入力、公演情報を入力後に【公演を登録する】ボタンを押すと、トップページの「公演情報」に自動で出力されます。
 
