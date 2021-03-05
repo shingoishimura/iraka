@@ -120,11 +120,7 @@
       
          
          
-         <% if ticket.image.attached? %>
-				 <%= link_to ticket.image, 'data-lightbox': ticket.image do%>  
-         <%= image_tag ticket.image %>
-         <% end %>
-				 <% end %>
+         
        </div>
 		   </div>
 
@@ -157,7 +153,9 @@
         </div>
 				</div>
 				</a>
-      
+      <div class="sell-btn-contents">
+      <%= link_to '削除', ticket_path(ticket.id), method: :delete, class:"ticket-destroy" %>
+      </div>
        <%end%>
     <% end %> 
     </nav> 
