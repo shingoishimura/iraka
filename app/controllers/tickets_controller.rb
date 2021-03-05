@@ -22,10 +22,10 @@ class TicketsController < ApplicationController
 
     def destroy
       if @ticket.destroy
-      redirect_to root_path
+      redirect_to new_ticket_path
 
       else
-        render :show
+        render :new
     end
   end
 
