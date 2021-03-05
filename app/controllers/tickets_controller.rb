@@ -1,4 +1,5 @@
 class TicketsController < ApplicationController
+  before_action :set_ticket, only: [:show, :edit, :update, :destroy]
   def index
     @tickets = Ticket.all
   end
@@ -10,7 +11,7 @@ class TicketsController < ApplicationController
   end
 
   def update
-    if @ticket.update(item_params)
+    if @ticket.update(ticket_params)
       redirect_to ticket_path
 
     else
@@ -51,5 +52,9 @@ class TicketsController < ApplicationController
 
   def ticket_params
     params.require(:ticket).permit(:program, :text, :venue, :date, :time, :price, :remaining, :image)
+  end
+
+  def set_ticket
+    @ticket = Ticket.find(params[:id])
   end
 end

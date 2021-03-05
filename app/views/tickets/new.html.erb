@@ -1,7 +1,6 @@
 <html
 ><div class="container">
  <body>
-
   <div class="ticket-sell-main">
     <h2 class="ticket-sell-title">公演の情報を入力</h2>
     <p>　</p>
@@ -117,6 +116,8 @@
     
        <div class="press-left_area_pc">
        <div class="press-left_area img">
+       <%= link_to image_tag(ticket.image, class: "ticket-img"), ticket_path(ticket.id),method: :get  %>
+      
          
          
          <% if ticket.image.attached? %>
@@ -127,14 +128,14 @@
        </div>
 		   </div>
 
-        <a href=""><div class="press-right_area"> 
+        <div class="press-right_area"> 
         <div class="press-right_area_text">      
         <div class='ticket-info'>
           <h3 class='program'>
-            <%= simple_format(ticket.program) %>
+            <%= link_to simple_format(ticket.program), ticket_path(ticket.id),method: :get %>
           </h3>
           <div class='ticket-text'>
-          <%= simple_format(ticket.text)%>
+          <%= link_to simple_format(ticket.text), ticket_path(ticket.id),method: :get %>
 					</div>
 					<%# <div class='ticket-venue'>
           <%= ticket.venue %>
@@ -173,13 +174,7 @@
     
     <div class="press-left_area_sp">
         <div class="press-left_area_sp img">
-         
-         
-         <% if ticket.image.attached? %>
-				 <%= link_to ticket.image, 'data-lightbox': ticket.image do%>  
-         <%= image_tag ticket.image %> 
-         <%end%>
-				 <% end %>
+				 <%= link_to image_tag(ticket.image, class: "ticket-img"), ticket_path(ticket.id),method: :get  %>
       </div>
 		</div>
 
@@ -187,10 +182,10 @@
         <div class="press-right_area_text_sp">      
         <div class='ticket-info'>
           <h3 class='program'>
-            <%= simple_format(ticket.program) %>
+            <%= link_to simple_format(ticket.program), ticket_path(ticket.id),method: :get %>
           </h3>
-        <div class='ticket-text'>
-          <%= simple_format(ticket.text)%>
+          <div class='ticket-text'>
+          <%= link_to simple_format(ticket.text), ticket_path(ticket.id),method: :get %>
 					</div>
 					<%# <div class='ticket-venue'>
           <%= ticket.venue %>
@@ -212,7 +207,11 @@
         </div>
 				</div>
         </a>
-      
+      <%# <div class="sell-btn-contents"> %>
+      <%# <%= f.submit "変更する" ,class:"sell-btn" %>
+      <div class="sell-btn-contents">
+      <%= link_to '削除', ticket_path(ticket.id), method: :delete, class:"ticket-destroy" %>
+      </div>
        <%end%>
     <% end %> 
     </nav> 

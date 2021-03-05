@@ -1,0 +1,143 @@
+<%# 商品の概要 %>
+<html
+><div class="container">
+ <body>
+  <nav class="pc_sw">
+     <div class="what_is">
+      </div>
+      <div class="press-top_area">
+    
+       <div class="press-left_area_pc">
+    <div class='press-left_area img'>
+      <%= image_tag @ticket.image %>
+      </div>
+          <div class="press-right_area"> 
+        <div class="press-right_area_text">      
+        <div class='ticket-info'>
+          <h3 class='program'>
+            <%= simple_format(@ticket.program) %>
+          </h3>
+          <div class='ticket-text'>
+          <%= simple_format(@ticket.text)%>
+					</div>
+          </nav>
+
+          <nav class="sp_sw">
+      <div class="press-top_area">
+    
+    <div class="press-left_area_sp">
+        <div class="press-left_area_sp img">
+         <%= image_tag @ticket.image %>
+      </div>
+		</div>
+
+        <a href=""><div class="press-right_area_sp"> 
+        <div class="press-right_area_text_sp">      
+        <div class='ticket-info'>
+          <h3 class='program'>
+            <%= simple_format(@ticket.program) %>
+          </h3>
+        <div class='ticket-text'>
+          <%= simple_format(@ticket.text)%>
+					</div>
+          </div>
+          </div>
+    
+      <%# <% if @item.order.present? %>
+      <%# <div class='sold-out'> %>
+        <%# <span>Sold Out!!</span> %>
+      <%# </div> %>
+      <%# <% end %> 
+    
+    <%# </div> %>
+    <%# <div class="item-price-box">
+      <span class="item-price">
+        <%= @item.price %>
+      <%# </span>
+      <span class="item-postage">
+        <%= @item.send_fee.name %>
+      <%# </span> 
+    </div>  %>
+
+    
+    
+    <%# <%= link_to '編集', edit_item_path, method: :get, class: "item-red-btn" %>
+    <%# <p class='or-text'>or</p> %>
+    <%# <%= link_to '削除', item_path, method: :delete, class:'item-destroy' %> 
+     
+     
+    
+  
+
+    <%# <div class="item-explain-box">
+      <span><%= @item.text</span> %>
+    <%# </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">出品者</th>
+          <td class="detail-value"><%= @item.user.nickname</td> %>
+        <%# </tr>
+        <tr>
+          <th class="detail-item">カテゴリー</th>
+          <td class="detail-value"><%= @item.category.name</td> 
+        <%# </tr>
+        <tr> %>
+          <%# <th class="detail-item">商品の状態</th>
+          <td class="detail-value"><%= @item.state.name</td> %>
+        <%# </tr>
+        <tr> %>
+          <%# <th class="detail-item">配送料の負担</th>
+          <td class="detail-value"><%= @item.send_fee.name</td> %>
+        <%# </tr>
+        <tr>
+          <th class="detail-item">発送元の地域</th> %>
+          <%# <td class="detail-value"><%= @item.prefecture.name</td>  %>
+        <%# </tr>
+        <tr> %>
+          <%# <th class="detail-item">発送日の目安</th> %>
+          <%# <td class="detail-value"><%= @item.send_period.data</td> %>
+        <%# </tr> %> 
+      <%# </tbody> %>
+    <%# </table> %> 
+    <%# <div class="option"> %>
+      <%# <div class="favorite-btn">
+        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <%# <span>お気に入り 0</span> %>
+      <%# </div> %>
+      <%# <div class="report-btn"> %>
+        <%# <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%> 
+        <%# <span>不適切な商品の通報</span> %>
+      <%# </div> %>
+    <%# </div> %>
+  <%# </div> %> 
+  <%# /商品の概要 %>
+
+  <%# <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        相手のことを考え丁寧なコメントを心がけましょう。
+        <br>
+        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+      </p>
+      <button type="submit" class="comment-btn">
+        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+        <%# <span>コメントする<span>
+      </button>
+    </form>
+  </div>
+  <div class="links">
+    <a href="#" class="change-item-btn">
+      ＜ 前の商品
+    </a> %>
+    <%# <a href="#" class="change-item-btn">
+      後ろの商品 ＞
+    </a>
+  </div>
+  <a href="#" class='another-item'><%= @item.category.nameをもっと見る</a>
+</div>
+
+<%= render "shared/footer" %> 
+</body>
+</html>
