@@ -1,14 +1,12 @@
 class TicketsController < ApplicationController
-  before_action :set_ticket, only: [:show, :edit, :update, :destroy]
+  before_action :set_ticket, only: %i[show edit update destroy]
   def index
     @tickets = Ticket.all
   end
 
-  def show
-  end
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @ticket.update(ticket_params)
@@ -19,13 +17,12 @@ class TicketsController < ApplicationController
     end
   end
 
-
-    def destroy
-      if @ticket.destroy
+  def destroy
+    if @ticket.destroy
       redirect_to new_ticket_path
 
-      else
-        render :new
+    else
+      render :new
     end
   end
 
@@ -45,8 +42,6 @@ class TicketsController < ApplicationController
       render :new
     end
   end
-
-  
 
   private
 

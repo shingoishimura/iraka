@@ -113,7 +113,6 @@
       </div>
 			<% @tickets.each do |ticket| %> 
       <div class="press-top_area">
-    
        <div class="press-left_area_pc">
        <div class="press-left_area img">
        <%= link_to image_tag(ticket.image, class: "ticket-img"), ticket_path(ticket.id),method: :get  %>
@@ -150,12 +149,14 @@
         <%# </div> %> 
 				</div>
         </div>
-        </div>
-				</div>
-				</a>
-      <div class="sell-btn-contents">
+       </div>
+    </div>
+    <div class="button">
+      <%= link_to '編集', edit_ticket_path(ticket.id), method: :get, class: "ticket-red-btn" %>
+    <p class='or-text'>or</p>
       <%= link_to '削除', ticket_path(ticket.id), method: :delete, class:"ticket-destroy" %>
       </div>
+        </a>
        <%end%>
     <% end %> 
     </nav> 
@@ -169,7 +170,7 @@
       </div>
 			<% @tickets.each do |ticket| %> 
       <div class="press-top_area">
-    
+  
     <div class="press-left_area_sp">
         <div class="press-left_area_sp img">
 				 <%= link_to image_tag(ticket.image, class: "ticket-img"), ticket_path(ticket.id),method: :get  %>
@@ -207,7 +208,10 @@
         </a>
       <%# <div class="sell-btn-contents"> %>
       <%# <%= f.submit "変更する" ,class:"sell-btn" %>
-      <div class="sell-btn-contents">
+      <div class="button">
+      <%= link_to '編集', edit_ticket_path(ticket.id), method: :get, class: "ticket-red-btn" %>
+    <p class='or-text'>or</p>
+    
       <%= link_to '削除', ticket_path(ticket.id), method: :delete, class:"ticket-destroy" %>
       </div>
        <%end%>
