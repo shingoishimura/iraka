@@ -57,6 +57,7 @@ nav {
     min-width: 90px;
     line-height: 120%;
     float: left;
+
 }
 
 nav ul li {
@@ -67,6 +68,7 @@ nav ul li {
     line-height: 120%;
     margin-top: 8px;
 }
+
 .stage-right_area{
     align-items: center;
     
