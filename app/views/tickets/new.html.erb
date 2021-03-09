@@ -2,6 +2,7 @@
 ><div class="container">
  <body>
   <div class="ticket-sell-main">
+  <div class="ticket-sell-right">
     <h2 class="ticket-sell-title">公演の情報を入力</h2>
     <p>　</p>
     <%= form_with model: @ticket ,local: true do |f| %>
@@ -153,9 +154,9 @@
     </div>
     <div class="button">
       <%= link_to '編集', edit_ticket_path(ticket.id), method: :get, class: "ticket-red-btn" %>
-    <p class='or-text'>or</p>
+    <%# <p class='or-text'>or</p>
       <%= link_to '削除', ticket_path(ticket.id), method: :delete, class:"ticket-destroy" %>
-      </div>
+      </div> 
         </a>
        <%end%>
     <% end %> 
@@ -209,10 +210,9 @@
       <%# <div class="sell-btn-contents"> %>
       <%# <%= f.submit "変更する" ,class:"sell-btn" %>
       <div class="button">
-      <%= link_to '編集', edit_ticket_path(ticket.id), method: :get, class: "ticket-red-btn" %>
-    <p class='or-text'>or</p>
-    
-      <%= link_to '削除', ticket_path(ticket.id), method: :delete, class:"ticket-destroy" %>
+      <%# <%= link_to '編集', edit_ticket_path(ticket.id), method: :get, class: "ticket-red-btn" %>
+    <%# <p class='or-text'>or</p>%>
+      <%= link_to '削除', ticket_path(ticket.id), method: :delete, class:"ticket-destroy" %> 
       </div>
        <%end%>
     <% end %> 
