@@ -152,12 +152,13 @@
         </div>
        </div>
     </div>
-    <div class="button">
-      <%= link_to '編集', edit_ticket_path(ticket.id), method: :get, class: "ticket-red-btn" %>
-    <%# <p class='or-text'>or</p>
+      <div class="sell-btn-contents">
+    <%# <div class="button"> %>
+      <%# <%= link_to '編集', edit_ticket_path(ticket.id), method: :get, class: "ticket-red-btn" %>
+    <%# <p class='or-text'>or</p> %>
       <%= link_to '削除', ticket_path(ticket.id), method: :delete, class:"ticket-destroy" %>
       </div> 
-        </a>
+      
        <%end%>
     <% end %> 
     </nav> 
@@ -207,7 +208,7 @@
         </div>
 				</div>
         </a>
-      <%# <div class="sell-btn-contents"> %>
+       <%# <div class="sell-btn-contents">  %>
       <%# <%= f.submit "変更する" ,class:"sell-btn" %>
       <div class="button">
       <%# <%= link_to '編集', edit_ticket_path(ticket.id), method: :get, class: "ticket-red-btn" %>

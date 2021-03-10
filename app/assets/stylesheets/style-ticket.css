@@ -70,7 +70,7 @@ display: flex;
   text-align: center;
   font-size: 24px;
   color: black;
-  margin: 20px 0px;
+  margin: 20px 0 20px 0;
   padding: 2vh 40px;
   border-radius: 10px;
 }
