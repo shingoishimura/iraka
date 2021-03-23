@@ -1,6 +1,6 @@
 class Ticket < ApplicationRecord
   has_many :orders
-  has_one_attached :image
+  has_many_attached :images
 
   with_options presence: true do
     validates :program

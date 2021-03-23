@@ -16,7 +16,7 @@
         <span class="indispensable">必須</span>
        </div>
        <div class="click-upload">
-        <%= f.file_field :image, id:"ticket-image" %>
+        <%= f.file_field :images,name: 'ticket[images][]', id:"ticket-image" %>
        </div>
       </div>
 
