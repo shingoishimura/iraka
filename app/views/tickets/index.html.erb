@@ -116,8 +116,8 @@
          
          
          <% if ticket.image.attached? %>
-				 <%= link_to ticket.image, 'data-lightbox': ticket.image do%>  
-         <%= image_tag ticket.image %>
+				 <%= link_to ticket.images, 'data-lightbox': ticket.images do%>  
+         <%= image_tag ticket.images %>
          <% end %>
 				 <% end %>
        </div>
